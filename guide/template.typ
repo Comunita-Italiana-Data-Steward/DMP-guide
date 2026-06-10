@@ -159,7 +159,7 @@
     let direction = if calc.even(val) {right} else {left}
     let delta = if calc.even(val) {1} else {-1}
     let box_nr = counter(figure.where(kind: "box")).get().at(0)
-    set text(font: "Manrope", size: 11pt)
+    set text(font: "Atkinson Hyperlegible Next", size: 11pt)
     set par(justify: true)
     set heading(numbering: none)
     block(
