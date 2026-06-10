@@ -124,4 +124,4 @@ jobs:
             📥 [Download compiled PDF](${{ steps.upload-pdf.outputs.artifact-url }})
             ${{ steps.diff.outputs.any != '' && format('🖼️ [Download changed page images]({0})', steps.upload-pages.outputs.artifact-url) || '' }}
 
-            > Compiled from ${{ github.sha }}
+            > Compiled from ${{ github.event.pull_request.head.sha }}
