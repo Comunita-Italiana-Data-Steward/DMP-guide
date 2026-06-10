@@ -20,6 +20,15 @@
         "projectManagement",
         "tutorial"
       ]
+    },
+    {
+      "login": "Mauropask",
+      "name": "Mauro Paschetta",
+      "avatar_url": "https://avatars.githubusercontent.com/u/272837804?v=4",
+      "profile": "https://github.com/Mauropask",
+      "contributions": [
+        "review"
+      ]
     }
   ]
 }
