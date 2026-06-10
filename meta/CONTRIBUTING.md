@@ -79,7 +79,6 @@ Here's what you will need to work on the guide locally:
   ![Screenshot with guidance of the Typst release page](./assets/typst_downloads_page.png)
 
   Save the file somewhere you will have access to and unzip it.
-  > [!TIP]
   > If you are on Linux, you can use your package manager of choice to install Typst.
   > Similarly, if you are on MacOS and use [homebrew](https://brew.sh/), you can install typst with this [homebrew recipe](https://formulae.brew.sh/formula/typst).
 - **Only if you are on Linux or MacOS**, you will need to install Git Large File Storage ([git-lfs](https://git-lfs.com/)).
