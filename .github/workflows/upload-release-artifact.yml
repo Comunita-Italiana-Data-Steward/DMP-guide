@@ -1,0 +1,31 @@
+name: Typst Release Asset
+
+on:
+  release:
+    types: [published]
+
+permissions: {}
+
+jobs:
+  attach-pdf:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # needed to upload release assets
+
+    steps:
+      - name: Checkout tag
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Compile to PDF
+        run: typst compile --font-path=guide/resources/fonts guide/main.typ "DMP_guide-${{ github.event.release.tag_name }}.pdf"
+
+      - name: Upload PDF to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: DMP_guide-${{ github.event.release.tag_name }}.pdf
