@@ -61,4 +61,4 @@ jobs:
  
             📥 [Download compiled PDF](${{ steps.upload-pdf.outputs.artifact-url }})
  
-            > Compiled from ${{ github.sha }} - Compilation artifact available for up to 7 days.
+            > Compiled from ${{ github.event.pull_request.head.sha }} - Compilation artifact available for up to 7 days.
