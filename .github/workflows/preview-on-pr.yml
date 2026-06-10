@@ -1,0 +1,127 @@
+name: Typst Preview
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "**.typ"
+      - "**.bib"
+      - "assets/**"
+
+# Minimal permissions at workflow level; job overrides to what's actually needed.
+permissions: {}
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read        # checkout
+      pull-requests: write  # post PR comment
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Checkout base branch
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          ref: ${{ github.base_ref }}
+          path: base
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v4
+
+      # ── Compile ────────────────────────────────────────────────────────────
+
+      - name: Compile PR branch to PNG
+        run: typst compile --ppi 120 document.typ pr-page-{n}.png
+
+      - name: Compile base branch to PNG
+        run: typst compile --ppi 120 base/document.typ base-page-{n}.png
+
+      - name: Compile PR branch to PDF
+        run: typst compile document.typ pr-output.pdf
+
+      # ── Diff pages ─────────────────────────────────────────────────────────
+
+      - name: Find changed pages
+        id: diff
+        run: |
+          changed_pages=""
+          new_pages=""
+
+          for pr_img in $(ls pr-page-*.png 2>/dev/null | sort); do
+            page="${pr_img#pr-page-}"        # e.g. "3.png"
+            base_img="base-page-${page}"
+
+            if [ ! -f "$base_img" ]; then
+              new_pages="$new_pages $page"
+            elif ! diff -q "$pr_img" "$base_img" > /dev/null 2>&1; then
+              changed_pages="$changed_pages $page"
+            fi
+          done
+
+          # Trim leading spaces
+          changed_pages="${changed_pages# }"
+          new_pages="${new_pages# }"
+          all_modified="${changed_pages} ${new_pages}"
+          all_modified="${all_modified# }"
+          all_modified="${all_modified% }"
+
+          echo "changed=${changed_pages}" >> "$GITHUB_OUTPUT"
+          echo "new=${new_pages}"         >> "$GITHUB_OUTPUT"
+          echo "any=${all_modified}"      >> "$GITHUB_OUTPUT"
+
+      # ── Artifacts ──────────────────────────────────────────────────────────
+
+      - name: Upload compiled PDF
+        id: upload-pdf
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-pdf
+          path: pr-output.pdf
+          retention-days: 7
+
+      - name: Upload changed page images
+        id: upload-pages
+        if: steps.diff.outputs.any != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: changed-pages
+          path: pr-page-*.png
+          retention-days: 7
+
+      # ── PR comment ─────────────────────────────────────────────────────────
+
+      # Look up any existing preview comment so we update it instead of
+      # spamming a new one on every push.
+      - name: Find existing preview comment
+        id: find-comment
+        uses: peter-evans/find-comment@v3
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: github-actions[bot]
+          body-includes: "<!-- typst-preview -->"
+
+      - name: Post or update PR comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          edit-mode: replace
+          body: |
+            <!-- typst-preview -->
+            ## 📄 Typst Preview
+
+            ${{ steps.diff.outputs.any == '' && '✅ No visual changes detected.' || '' }}
+            ${{ steps.diff.outputs.changed != '' && format('🔄 **Modified pages:** `{0}`', steps.diff.outputs.changed) || '' }}
+            ${{ steps.diff.outputs.new != '' && format('🆕 **New pages:** `{0}`', steps.diff.outputs.new) || '' }}
+
+            📥 [Download compiled PDF](${{ steps.upload-pdf.outputs.artifact-url }})
+            ${{ steps.diff.outputs.any != '' && format('🖼️ [Download changed page images]({0})', steps.upload-pages.outputs.artifact-url) || '' }}
+
+            > Compiled from ${{ github.sha }}
