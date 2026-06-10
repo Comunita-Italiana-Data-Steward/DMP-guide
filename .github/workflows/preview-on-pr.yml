@@ -44,7 +44,7 @@ jobs:
         run: typst compile --font-path=guide/resources/fonts --ppi 120 base/guide/main.typ base-page-{n}.png
 
       - name: Compile PR branch to PDF
-        run: typst compile document.typ pr-output.pdf
+        run: typst compile --font-path=guide/resources/fonts guide/main.typ pr-output.pdf
 
       # ── Diff pages ─────────────────────────────────────────────────────────
 
