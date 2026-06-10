@@ -3,6 +3,8 @@
 #section_title[Introduction]
 Data Management Plans, or DMPs, are *formal* documents that describe how you will *handle your data during your project*, and how you will *make it available for others* after your project ends.
 
+This is test modification to check out if the workflow on GitHub works.
+
 Writing a good, complete DMP and following it *will benefit you and your collaborators*, increasing your efficiency when collecting, processing and analyzing data as well as making it hard to lose, delete, corrupt or accidentally edit your files.
 
 A proper DMP also makes you *aware of legal requirements you have to follow when managing your data*, and lets you deal with these issues promptly and swiftly. For example, if your data involves information regarding individuals ("personal data"), it might be covered by the General Data Protection Regulation (GDPR), and thus has to be handled in particular ways to not incur in fines and other legal repercussions.
