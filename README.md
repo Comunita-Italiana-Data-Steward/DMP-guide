@@ -56,7 +56,7 @@ In any case, all contributions, no matter how small, are included at [the bottom
 
 ## Contributing to the guide
 The guide is open for contributions from everyone!
-Please refer to the [Contributing Guide](meta/CONTRIBUTING.md) for more information.
+Please refer to the [Contributing Guide](CONTRIBUTING.md) for more information.
 
 Contributors are expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md) of this repository.
 
