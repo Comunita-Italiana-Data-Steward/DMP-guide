@@ -89,7 +89,7 @@ Feel free too use AI to check for formatting errors, or to reformat what you wro
 
 == We welcome feedback!
 We would love to hear from you!
-If you have comments, suggestions, constructive criticism or have found an error in this guide, please send a message to one of the authors with your observations.
+If you have comments, suggestions, constructive criticism or have found an error in this guide, head on over to the guide's repository at #elink("https://github.com/Comunita-Italiana-Data-Steward/DMP-guide")[github.com/Comunita-Italiana-Data-Steward/DMP-guide] and join the discussion.
 Thank you!
 
 #section_title[Your Team]
