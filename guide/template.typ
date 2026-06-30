@@ -1,6 +1,6 @@
-#let doc_version = "0.2"
+#let doc_version = "0.3"
 #let doc_release_date = "May 2026"
-#let doc_doi = "https://doi.org/10.5281/zenodo.15063426" // TODO: fill this
+#let doc_doi = "https://doi.org/10.5281/zenodo.21066380"
 
 // Switches
 #let FOOTNOTE_LINKS = true // Makes links appear as footnotes
