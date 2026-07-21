@@ -1502,7 +1502,7 @@ DMPs are usually static text documents. In recent years, however, the publicatio
 First of all, what is a maDMP? It is a DMP structured in a way that allows machines to read and reuse the information it contains. Written in formats such as JSON or RDF/XML, and using controlled vocabularies, maDMPs can exchange information with other systems at different stages of the research lifecycle.
 For example, instead of having a plain text document that says who created a particular dataset, we could have a JSON document such as:
 
-<pre><code class="language-json">{
+{
   "author": {
     "name": "Jane Doe",
     "orcid": "0000-0002-1825-0097",
@@ -1511,7 +1511,7 @@ For example, instead of having a plain text document that says who created a par
       "doi": "10.1234/example.doi"
     }
   }
-}</code></pre>
+}
 
 A machine can interpret this information and link the dataset to the information contained in the DMP.
 This is what makes maDMPs useful: they make it easier to link the DMP directly to real research lifecycle artefacts.
