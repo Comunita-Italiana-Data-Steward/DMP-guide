@@ -1497,6 +1497,25 @@ Many founder's portals allow you to share your DMP openly - consider doing so.
 
 If you do share the DMP with a license, include the licensing note (such as the one you get from the #rlink("https://creativecommons.org/chooser/")[creative commons license chooser]) somewhere in the document, usually at the start or at the end.
 
+== Machine actionable DMP
+DMPs are usually static text documents. In recent years, however, the publication of machine-actionable versions of these documents (maDMPs) has become increasingly common.
+First of all, what is a maDMP? It is a DMP structured in a way that allows machines to read and reuse the information it contains. Written in formats such as JSON or RDF/XML, and using controlled vocabularies, maDMPs can exchange information with other systems at different stages of the research lifecycle.
+For example, instead of having a plain text document that says who created a particular dataset, we could have a JSON document such as:
+
+{
+  "author": {
+    "name": "Jane Doe",
+    "orcid": "0000-0002-1825-0097",
+    "authored_dataset": {
+      "title": "Dataset title",
+      "doi": "10.1234/example.doi"
+    }
+  }
+}
+
+A machine can interpret this information and link the dataset to the information contained in the DMP.
+This is what makes maDMPs useful: they make it easier to link the DMP directly to real research lifecycle artefacts.
+Several tools provide graphical user interfaces for creating and publishing maDMPs. Examples include the #rlink("https://ds-wizard.org/")[Data Stewardship Wizard] and #rlink("https://argos.openaire.eu/home")[ARGOS DMP].
 
 #activity[
   == #emoji.page.pencil Final aspects <activity:other>
