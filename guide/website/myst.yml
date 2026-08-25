@@ -1,0 +1,24 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: b5e9928c-f65c-48b7-8784-965b6a8ae458
+  title: Guide on writing DMPs
+  authors:
+    - Comunita' Italiana Data Steward
+  copyright: 2026
+  license:
+    code: MIT
+    content: CC-BY-4.0
+  bibliography:
+    - bibliography.bib
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/Comunita-Italiana-Data-Steward/DMP-guide
+
+
+site:
+  template: book-theme
+  options:
+    favicon: ../resources/images/favicon/favicon.ico
+  #   logo: site_logo.png
