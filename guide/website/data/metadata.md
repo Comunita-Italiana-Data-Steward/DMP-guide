@@ -1,5 +1,4 @@
 ---
-title: Metadata
 author:
   - name: Luca Visentin
     orcid: https://orcid.org/0000-0003-2568-5694
@@ -73,7 +72,7 @@ More information on controlled vocabularies is available in [@box]:controlled_vo
 If those are unsatisfactory, you can also check the [FAIRSharing Registry of Standards](https://fairsharing.org/search?fairsharingRegistry=Standard&isRecommended=true&page=1&isMaintained=true&status=ready), and search for keywords relevant to your field. Be sure to check the "Maintained", "Recommended" and "Ready" checkboxes to find the most useful results. You should obtain a list of relevant standards which you can explore and potentially select for reuse.
 
 <figure>
-<p><img src="resources/images/fairsharing_options.png" style="width:80.0%" /></p>
+<p><img src="../images/fairsharing_options.png" style="width:80.0%" /></p>
 <figcaption><p>Detail of the <a href="https://fairsharing.org/search?fairsharingRegistry=Standard&amp;isRecommended=true&amp;page=1&amp;isMaintained=true&amp;status=ready">FAIRSharing Registry of Standards</a> showing the recommended options when performing a search.</p></figcaption>
 </figure>
 

@@ -16,16 +16,8 @@ It is aimed both at Principal Investigators which need to create a DMP as a deli
 You can read this guide by going through all the pages, or skipping along to just those which are relevant to you.
 At the end of each page, a small section will guide you towards other relevant pages.
 
-There are also "learning paths", designed to guide you 
-
-
-## A living document
-
-A data management plan is a **living document**, chiefly useful to you and your research team. This means that you can (and should) **update your DMP regularly**, denoting any important changes in your data management strategy: for example, if you find an error, something you planned turned out to be inefficient, or you have to manage new kinds of data.
-
-**Do not be afraid to state that a particular aspect of your data management strategy is currently unknown** (or unknowable), and that you will update the DMP as more information comes in during the project.
-
-Showcasing that you have taken in consideration an aspect of data management but do not yet know how you will handle it is much more significant than simply ignoring it.
+There are also "learning paths", designed to guide you through the book depending on your use-case.
+Learn more about them in [the next section](learning_paths.md).
 
 ## Every project is unique
 

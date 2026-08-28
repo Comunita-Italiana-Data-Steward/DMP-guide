@@ -15,10 +15,53 @@ project:
   # keywords: []
   # authors: []
   github: https://github.com/Comunita-Italiana-Data-Steward/DMP-guide
+  toc:
+    - file: index.md
+    - file: learning_paths.md
+      title: Learning paths
+    - file: basics/index.md
+      title: Introduction
+      children:
+      - file: basics/dmp_content.md
+        title: DMP contents
+      - file: basics/living_doc.md
+        title: A living document
+      - file: basics/your_team.md
+        title: Delineating your team
+    - file: data/index.md
+      title: Data Management
+      children:
+      - file: data/your_data.md
+        title: Identifying your data
+      - file: data/metadata.md
+        title: Metadata
+      - file: data/reusing_data.md
+        title: Reusing data
+      - file: data/file_organization.md
+        title: Organizing files
+      - file: data/sharing_preservation.md
+        title: Preserving and sharing data
+    - file: legal/index.md
+      title: Legal aspects
+      children:
+        - file: legal/sensitive_data.md
+          title: Sensitive data
+    - file: software/index.md
+      title: Software
+      children:
+        - file: software/software.md
+          title: Software management
+    - file: format_presentation/index.md
+      title: Formatting and presentation
+      children:
+        - file: format_presentation/final_aspects.md
+          title: Other aspects
+        - file: format_presentation/wrapping_up.md
+          title: DMP structure and format
 
 
 site:
   template: book-theme
   options:
     favicon: ../resources/images/favicon/favicon.ico
-  #   logo: site_logo.png
+    logo: ../resources/images/book.png
