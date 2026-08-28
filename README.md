@@ -68,10 +68,7 @@ Contributors are expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md) of
 
 ## Citing the guide
 If you use the guide and would like to cite it, please use the following:
-> "Guide on Writing Data Management Plans", Luca Visentin & Comunita' Italiana Data Steward, https://github.com/Comunita-Italiana-Data-Steward/DMP-guide
-
-> [!NOTE]
-> A proper DOI will come soon!
+> "Guide on Writing Data Management Plans", Luca Visentin & Comunita' Italiana Data Steward, https://doi.org/10.5281/zenodo.21066379
 
 ## Useful contacts
 This project is part of the Comunita' Italiana Data Steward (CIDS), and in particular in the Gruppo di Lavoro Data Management Plan (GdL DMP).
