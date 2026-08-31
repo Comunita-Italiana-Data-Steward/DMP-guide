@@ -1,0 +1,77 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: b5e9928c-f65c-48b7-8784-965b6a8ae458
+  title: Guide on writing DMPs
+  authors:
+    - Comunita' Italiana Data Steward
+  copyright: 2026
+  license:
+    code: MIT
+    content: CC-BY-4.0
+  bibliography:
+    - bibliography.bib
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/Comunita-Italiana-Data-Steward/DMP-guide
+  toc:
+    - file: index.md
+    - file: learning_paths.md
+      title: Learning paths
+    - file: basics/index.md
+      title: Introduction
+      children:
+      - file: basics/dmp_content.md
+        title: DMP contents
+      - file: basics/living_doc.md
+        title: A living document
+      - file: basics/your_team.md
+        title: Delineating your team
+    - file: data/index.md
+      title: Data Management
+      children:
+      - file: data/your_data.md
+        title: Identifying your data
+      - file: data/metadata.md
+        title: Metadata
+      - file: data/reusing_data.md
+        title: Reusing data
+      - file: data/file_organization.md
+        title: Organizing files
+      - file: data/sharing_preservation.md
+        title: Preserving and sharing data
+    - file: legal/index.md
+      title: Legal aspects
+      children:
+        - file: legal/sensitive_data.md
+          title: Sensitive data
+    - file: software/index.md
+      title: Software
+      children:
+        - file: software/software.md
+          title: Software management
+    - file: format_presentation/index.md
+      title: Formatting and presentation
+      children:
+        - file: format_presentation/final_aspects.md
+          title: Other aspects
+        - file: format_presentation/wrapping_up.md
+          title: DMP structure and format
+    - file: activities/index.md
+      title: Activities and Examples
+      children:
+        - file: activities/your_team.md
+          title: Delineate your team
+        - file: activities/data_outline.md
+          title: Delineate your data
+        - file: activities/metadata_schemas.md
+          title: Find metadata schemas
+        
+
+
+site:
+  template: book-theme
+  options:
+    favicon: ../resources/images/favicon/favicon.ico
+    logo: ../resources/images/book.png
