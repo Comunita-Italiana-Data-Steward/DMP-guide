@@ -5,7 +5,6 @@ author:
     orcid: https://orcid.org/0000-0003-2568-5694
 ---
 
-# What to write in your DMP
 The most basic thing to know when starting out to write a Data Management Plan (DMP) is what to include and what not to include in it.
 
 A DMP, as the name suggests, delineates your strategy on data handling, as well as how you plan to preserve and share your data. 
