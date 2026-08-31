@@ -58,6 +58,16 @@ project:
           title: Other aspects
         - file: format_presentation/wrapping_up.md
           title: DMP structure and format
+    - file: activities/index.md
+      title: Activities and Examples
+      children:
+        - file: activities/your_team.md
+          title: Delineate your team
+        - file: activities/data_outline.md
+          title: Delineate your data
+        - file: activities/metadata_schemas.md
+          title: Find metadata schemas
+        
 
 
 site:

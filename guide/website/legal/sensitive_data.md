@@ -6,7 +6,6 @@ author:
 ---
 
 # Sensitive Data
-
 Not all data is the same. Some kinds of data are protected under very specific legal frameworks, and if you work with such data it is essential to respect them in order to avoid legal repercussions against yourself, the institution and your partners.
 
 In this guide, we refer to it as ***sensitive data***: all data that is related to, describes or otherwise identified a person, as well as data which can have dual uses (both civilian and military), and data which has associated ethical problems. We will discuss each of these characteristics in turn during this chapter.
@@ -47,7 +46,7 @@ You will need to contact the Ethical Board if your research deals with ethically
 - Data which can **negatively impact the environment**, public health, or the safety of people and things;
 - **Developing AI models**, especially if used for decision-making which can impact human well-being;
 - Development of **weapon, defense and other war systems**.
-- The development of technology or knowledge **which might be repurposed for nefarious ends such as war**. These are known as "dual use", and specific regulations handle their usage and export. See [@info]:dual_use for more information.
+- The development of technology or knowledge **which might be repurposed for nefarious ends such as war**. These are known as "dual use", and specific regulations handle their usage and export.
 - Other sensitive topics, such as man-machine interaction, genetic enhancement, nanotechnology, etc... which may cause ethical concerns;
 
 The ethical board will take your project into consideration and decide if the topics discussed are problematic or not, and, if so, will advise you on how to proceed. Note that all judgements made by the board are generally **final and binding**.
@@ -87,8 +86,7 @@ If your data is not sensitive, write down why. You will then simply add this sta
 
 Finally, consider who will be responsible for the safety and security of your data. Usually, this is the leader institution of your group, but it may not be (see [\[ownership\]](#ownership){.ref}).
 
-# 📑 Legal Aspects
-
+## 📑 Legal Aspects
 Andrea and their colleagues check over the list of objectives and data types they created following [@activity:data_outline].
 
 While they do not think they are performing research which could be considered dual-use, it is clear to them that they will handle personal data (names, surnames, illness status, home addresses).
