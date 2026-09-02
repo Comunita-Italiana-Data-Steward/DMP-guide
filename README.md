@@ -9,6 +9,8 @@
 > We are currently planning on translating this README in more languages.
 > Please check out the [relevant issue](https://github.com/Comunita-Italiana-Data-Steward/DMP-guide/issues/5).
 
+Ciao!
+
 The aim of this project is to create an accessible, practical but complete guide on writing a [Data Management Plan](https://en.wikipedia.org/wiki/Data_management_plan) (DMP).
 
 This guide is useful to:
