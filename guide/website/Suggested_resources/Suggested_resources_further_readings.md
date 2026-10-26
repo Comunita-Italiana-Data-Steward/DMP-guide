@@ -11,5 +11,5 @@ This section brings together a selection of recommended resources and tools to h
 - [Other guides to write DMPs](./other_guides.md)
 - [Online tools for creating DMPs](./online_tools.md)
 - [DMP assessment](./DMP_assessment.md)
-- [Catalogues of DMPs](./catalogues_of_DMPs)
+- [Catalogues of DMPs](./catalogues_of_DMPs.md)
 - [Other papers and references](./other_refs.md)
