@@ -1,8 +1,9 @@
----
-author:
-  - name: Luca Visentin
-    orcid: https://orcid.org/0000-0003-2568-5694
----
+Authors:
+| Name | orcid |
+| --- | --- |
+| [Luca Visentin](https://orcid.org/0000-0003-2568-5694) | [0000-0003-2568-5694](https://orcid.org/0000-0003-2568-5694) |
+| [Andrea Tarallo](https://orcid.org/0000-0002-2749-8588) | [0000-0002-2749-8588](https://orcid.org/0000-0002-2749-8588) |
+
 
 # Wrapping up
 Congratulations for reaching the end of the guide!
@@ -36,6 +37,32 @@ If you decide not to follow a DMP template, just be sure to include all the foll
 - **Costs, resources and miscellaneous**: information from [@activity:other] and any other relevant aspects regarding data handling.
 
 Congratulations of having finished your DMP! May it serve you well (and save you from many headaches) during you project.
+
+## Machine actionable DMPs
+DMPs are usually static text documents. In recent years, however, the publication of machine-actionable versions of these documents (maDMPs) has become increasingly common.
+
+First of all, **what is a maDMP?** It is a DMP structured in a way that allows machines to read and reuse the information it contains. 
+Written in formats such as JSON or RDF/XML, and using controlled vocabularies, maDMPs can exchange information with other systems at different stages of the research lifecycle.
+For example, instead of having a plain text document that says who created a particular dataset, we could have a JSON document which says:
+
+```{code} json
+{
+  "author": {
+    "name": "Jane Doe",
+    "orcid": "0000-0002-1825-0097",
+    "authored_dataset": {
+      "title": "Dataset title",
+      "doi": "10.1234/example.doi"
+    }
+  }
+}
+```
+
+A machine can read, understand, and interpret this information, and be able to link the published dataset to the information contained in the DMP.
+This is what makes maDMPs useful: they make it easier to link the DMP directly to real research lifecycle artefacts.
+
+Several tools provide graphical user interfaces for creating and publishing maDMPs.
+Examples include the [Data Stewardship Wizard](https://ds-wizard.org/) and [ARGOS DMP](https://argos.openaire.eu/home).
 
 ## Reviewing before submission
 Before submitting your DMP for review, it is useful to contact your institution's data stewardship team (if one is available to you). They can check your DMP for you before you submit it or start using it.
