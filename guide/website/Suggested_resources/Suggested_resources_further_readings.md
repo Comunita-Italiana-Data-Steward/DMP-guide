@@ -1,7 +1,8 @@
-Authors:
-| Name | orcid |
-| --- | --- |
-| [Andrea Tarallo](https://orcid.org/0000-0002-2749-8588) | [0000-0002-2749-8588](https://orcid.org/0000-0002-2749-8588) |
+---
+author:
+  - name: Andrea Tarallo
+    orcid: https://orcid.org/0000-0002-2749-8588
+---
 
 
 # Further suggested resources and readings

@@ -1,8 +1,10 @@
-Authors:
-| Name | orcid |
-| --- | --- |
-| [Luca Visentin](https://orcid.org/0000-0003-2568-5694) | [0000-0003-2568-5694](https://orcid.org/0000-0003-2568-5694) |
-| [Andrea Tarallo](https://orcid.org/0000-0002-2749-8588) | [0000-0002-2749-8588](https://orcid.org/0000-0002-2749-8588) |
+---
+author:
+  - name: Luca Visentin
+    orcid: https://orcid.org/0000-0003-2568-5694
+  - name: Andrea Tarallo
+    orcid: https://orcid.org/0000-0002-2749-8588
+---
 
 
 # Wrapping up
