@@ -4,7 +4,7 @@ author:
     orcid: https://orcid.org/0000-0002-2749-8588
 ---
 
-# Other papers and references
+# Other useful references
 
 ## The Data and Digital Object Management Plans (D(DO)MPs)
 
