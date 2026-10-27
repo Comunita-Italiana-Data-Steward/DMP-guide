@@ -4,6 +4,8 @@ author:
     orcid: https://orcid.org/0000-0002-2749-8588
 ---
 
+# Catalogues of DMPs
+
 Examples of published DMPs can help researchers as a source of inspiration for their own DMPs. This section is particularly useful for researchers looking for discipline-specific examples rather than generic templates. The catalogues and repositories below provide access to plans and examples from different research fields and countries. Some offer curated collections of DMPs, while others are general-purpose repositories in which plans can be discovered through searches.
 When using these examples, it is important to remember that DMPs are context-dependent. Content always needs to be adapted to the project's research objectives, data types, ethical and legal requirements, institutional policies and funder expectations. Note also that the listed DMPs have not necessarily been assessed for quality or completeness, so their relevance and suitability should be evaluated individually. 
 
