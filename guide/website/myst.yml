@@ -67,18 +67,18 @@ project:
           title: Delineate your data
         - file: activities/metadata_schemas.md
           title: Find metadata schemas
-    - file: Suggested_resources_further_readings.md
+    - file: Suggested_resources/Suggested_resources_further_readings.md
       title: Further suggested resources and readings
       children:
-        - file: Other_guides.md
+        - file: Suggested_resources/Other_guides.md
           title:  Other guides to write DMPs
-        - file: Online_tools.md
+        - file: Suggested_resources/Online_tools.md
           title: Online tools for creating DMPs
-        - file: DMP_assessment.md
+        - file: Suggested_resources/DMP_assessment.md
           title: DMP assessment
-        - file: Catalogues_of_DMPs.md
+        - file: Suggested_resources/Catalogues_of_DMPs.md
           title: Catalogues of DMPs
-        - file: Other_refs.md
+        - file: Suggested_resources/Other_refs.md
           title: Other papers and references
 
 site:
