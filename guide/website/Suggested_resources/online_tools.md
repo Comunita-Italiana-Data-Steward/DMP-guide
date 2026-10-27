@@ -4,6 +4,8 @@ author:
     orcid: https://orcid.org/0000-0002-2749-8588
 ---
 
+# Online tools for creating DMPs
+
 A range of online tools is available to help researchers and data stewards create, publish and manage data management plans (DMPs). These tools offer different features, including funder-specific templates, guided questionnaires, collaborative editing and export options. Some also support the export of machine-readable formats, such as JSON. The benefits of machine-actionable DMPs are discussed in the relevant section of this guide.
 
 The tools listed below vary in functionality, access conditions and intended audiences. You can therefore choose the one that best suits your needs and institutional context.
